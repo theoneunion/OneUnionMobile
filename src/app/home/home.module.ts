@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
 import { HomePage } from './home.page';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @NgModule({
   imports: [
@@ -17,6 +17,9 @@ import { HomePage } from './home.page';
         component: HomePage
       }
     ])
+  ],
+  providers: [
+      InAppBrowser,
   ],
   declarations: [HomePage]
 })

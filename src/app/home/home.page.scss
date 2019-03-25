@@ -1,1 +1,37 @@
 
+
+.loader {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader-content {
+    margin-top: 150px;
+    opacity: 0;
+    transition: all .75s ease;
+  }
+  .spinner {
+    transform: scale(2);
+  }
+  .text-error {
+    padding: 30px 30px 0px 30px;
+    color: white;
+    text-align: center;
+  }
+  .active {
+    opacity: 1;
+  }
+}
+
+.img-container {
+  height: 100%;
+  display: flex;
+  background-color: #316CAD;
+  .logo {
+    max-width: 96px;
+    margin: auto;
+  }
+}
